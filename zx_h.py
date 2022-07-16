@@ -236,8 +236,8 @@ def fileStatisticsbyPython_zx():
     from pandas import DataFrame
 
     # pa = str(input('postion(\\):'))
-    pa = r'D:\Monitor'
-    pa = r'D:\DeskTop\2021级核物二班 活动记录'
+    pa = r'D:\User'
+    # pa = r'D:\DeskTop\2021级核物二班 活动记录'
     # pa = r"D:\Monitor - 副本"
     li = []
     for i in listdir(pa):
@@ -270,7 +270,7 @@ def FileStatisticsbyPython_zx():
     pa = r'D:\Monitor'
     pa = r'D:\DeskTop\2021级核物二班 活动记录'
     # pa = r"D:\Monitor - 副本"
-    pa0=pa.split(sep=('\\'))[-1]
+    pa0 = pa.split(sep=('\\'))[-1]
     # print(pa0)
     chdir(pa)
     li = []
@@ -292,7 +292,7 @@ def FileStatisticsbyPython_zx():
     df = DataFrame(data=lc, index=li)
     df.to_excel('..\\' + 'fileStatisticsbyPython_zx.xlsx', na_rep=' ')
     print(df)
-    
+
     input('input for leave')
 
 
@@ -363,8 +363,40 @@ def ElectronSpeed(u=1, e=1.6e-19, m=9.1e-31):
     return (2 * u * e / m) ** 0.5
 
 
+def Unm(a=1, b=10, n=10000):
+    from random import uniform
+    x = []
+    for i in range(0, n):
+        x.append(uniform(a, b))
+    return x
+
+
+def pufg(a=1, l=1, n=1000):
+    from random import uniform
+    from math import pi, cos
+    t = 0
+    for i in range(0, n):
+        if l*cos(uniform(0, pi/2)) >= uniform(0, a):
+            t += 1
+    return 2*n/t
+
+
+def cir_s(n=10000):
+    from random import uniform
+    from math import pi, cos
+    t = 0
+    for i in range(0, n):
+        if(uniform(-1, 1)**2+uniform(-1, 1)**2) <= 1:
+            t += 1
+    return t/n
+
+
 if __name__ == '__main__':
-    FileStatisticsbyPython_zx()
+    # print(Unm(), len(Unm()))
+    # print(pufg(n=10000))
+    # fileStatisticsbyPython_zx()
+    filetree(pa='D:\\user')
+    # FileStatisticsbyPython_zx()
     # filetree()
 # =============================================================================
 #     print(gethtmlbypyppteer())

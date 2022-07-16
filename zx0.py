@@ -1,12 +1,12 @@
 def staff(wo='原神芭芭拉',
           url=r'https://image.baidu.com/search/index?ct=201326592&z=9&tn=baiduimage&ipn=r&word=%E5%8E%9F%E7%A5%9E%E8%8A%AD%E8%8A%AD%E6%8B%89&pn=0&istype=2&ie=utf-8&oe=utf-8&cl=2&lm=-1&st=-1&fr=&fmq=&ic=0&se=&sme=&width=0&height=0&face=0&hd=1&latest=0&copyright=0',
           nu=90):
-    from zx_h import change, gethtmlbypyppteer, downLoadjpg
+    from zx_h import change, gethtmlbypyppteer, downLoadjpg, gethtmlbyselenium
     # se = input_set(se)
     url = change(wo, url)
     html = gethtmlbypyppteer(url)
     # html = getHtmlbyRequests(url)
-    # html = getHtmlbySelenium(url)
+    # html = gethtmlbyselenium(url)
     downLoadjpg(wo, nu, html)
 
 
@@ -303,7 +303,7 @@ def Polyfit(x, y, deg):
 if __name__ == '__main__':
     import numpy as np
     # news()
-    # staff()
+    staff()
     # panch()
     # import matplotlib.pyplot as plt
     # plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
@@ -322,7 +322,7 @@ if __name__ == '__main__':
     # deg = 1
     # print(x, y)
     # Polyfit(x, y, deg)
-    staff(wo='原神芭芭拉')
+    # staff(wo='利兹与青鸟', nu=30, url='https://yandex.com/images/search?family=yes&rpt=imageview&cbir_page=similar&url=https%3A%2F%2Fyandex-images.clstorage.net%2FU5l21Ro55%2F5e2d48nVvkh%2Ftv4qHX8gnMkCD0xATFyjmg29CMMkKQSyaWePtHYmuaXOl-F7d5rZoEm4y4V-BD3tLx4KY6AUcIJLytsJKJA5rrinbY21b9FAVh2dR1zeY8vKMoSKbSeY-iSo1b_85eqkDNbmqbOKWi8ELFucKNygOLYAi6wrjj8JWwLayGER8S94rjNK_GiagkBJCxkCXObETvbABi3q1nzib1ywfSUh7QiXLDp6iNsjB3LVnKtd6zczhQQlrYT5wN0BG80l0XCn9-H6RXFuEQUBiQqbBBRjxYq1y8ZuZBF7pCDZsL_p62pMW-SxsklYLQ890thlUq7_soyEJenEconSyBWCqZd9ZDdh-sc-4NlIBgqD0sbbLcEHcE_C62Rc-Opq0fOxYmjrQ5mr8_BEGihNfR3UpZ3leL5AiyzlCbWD0AWUQmfX_ig6Y_2Cs-WRAUCBgR-JUOWHA7TIgCyinfVkYxfzMqhv40HfLLY1RRBpjXUUGqXRIz3xBU2tLQR_iFnFlMVsmvpuMq0wgz6p0ARPgspaTN7uyQ_3A4Sg4l18qurYcHWjLmxBnCBzv4uY7oA02JogV24_Mo5NI6CLuIqZwNwK41L8ZHLqdM37oJWBB8qGlkZY40OJMUZHLqSdOqXmH3b6oi-izN2iP7KBWKgLMNzQZ9PqObFJROJhTbMLGQ8ciGGY-ez7bHTCdSFdRkwKANZKmK5JSjTJQqvqlfzsr5h2sS_h5kDepjmyylUmz7-dkCHa5PW9D8ptK8S_yBlPX4CkmP0mN6D3xfKvUY2ODwoeQtityEV5RwBvpp3yLKYXPfWh5ysHHiE3sk1fLc73EJBhWWN9947PKuFL-oKUzVACIVq4oXkiMgA66FQMSs3L0sTYJoxJ_A5GZC6SdCFu1nj6K26uSVUm-zrFFCoCeJJVplig_3BHyCqiTXCKmcGcCqRbvmG_7bNF_eccRgjFhNuBl2lAQH2Pwuvlmzqop1c5dc&cbir_id=1495804%2FgbGpJxKlDatVo2JaWcaXdg1998&crop=0.15%3B0.15%3B0.85%3B0.85')
     # news()
     # n=1000000
     # print(isprime(1000))
