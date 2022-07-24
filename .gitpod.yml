@@ -1,4 +1,5 @@
 tasks:
-    - init: mkdir install && git clone https://github.com/zx2810/openmc.git &>install
-    - commad: cd install/openmc
+    - commad: mkdir install && cd install
+    - commad: git clone https://github.com/zx2810/openmc.git
+    - commad: cd openmc
     - commad: pip install . && cmake .
