@@ -5,4 +5,4 @@ tasks:
   - name: develop
     before: |
       cd ../deveiop
-    - init: pip install . && cmake .
+  - init: pip install . && cmake .
