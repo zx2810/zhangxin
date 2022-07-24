@@ -1,0 +1,8 @@
+additionalRepositories:
+  - url: https://github.com/zx2810/openmc/develop
+    checkoutLocation: develop
+tasks:
+  - name: develop
+    before: |
+      cd ../deveiop
+    - init: pip install . && cmake .
