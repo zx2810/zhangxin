@@ -24,4 +24,4 @@ jupyter labextension install nbgather
 pip install 'jupyterlab>=3.0.0,<4.0.0a0' jupyterlab-lsp
 jupyter labextension install jupyterlab-spreadsheet
 # https://zhuanlan.zhihu.com/p/437592449⬇
-pip install "jupyterlab-kite>=2.0.2"
+# pip install "jupyterlab-kite>=2.0.2"
