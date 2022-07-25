@@ -1,3 +1,0 @@
-tasks:
-  - init: pip install zhangxin.requirements.txt
-    commad: setup.sh
