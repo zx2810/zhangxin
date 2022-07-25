@@ -40,7 +40,7 @@ pandas
 you-get
 zipp
 tensorboard
-pywin32
+#pywin32
 requests
 pdf2docx
 pdfminer
