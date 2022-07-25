@@ -1,4 +1,6 @@
 #%matplotlib widget
+pip install jupyterlab-language-pack-zh-CN
+jupyter serverextension enable --py jupyterlab --sys-prefix
 pip install --upgrade jupyterlab jupyterlab-git
 pip install jupyterlab-github
 jupyter labextension install @jupyterlab/toc
