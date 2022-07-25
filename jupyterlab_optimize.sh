@@ -1,7 +1,8 @@
 #%matplotlib widget
 pip install jupyterlab-language-pack-zh-CN
 jupyter serverextension enable --py jupyterlab --sys-prefix
-pip install --upgrade jupyterlab jupyterlab-git
+# pip install --upyterlab-git
+# pip install --upgrade jupyterlab jupyterlab-git
 pip install jupyterlab-github
 jupyter labextension install @jupyterlab/toc
 pip install jupyterlab_latex
@@ -22,5 +23,5 @@ pip install "jupyterlab>=1.0" jupyterlab-dash==0.1.0a3
 jupyter labextension install nbgather
 pip install 'jupyterlab>=3.0.0,<4.0.0a0' jupyterlab-lsp
 jupyter labextension install jupyterlab-spreadsheet
+# https://zhuanlan.zhihu.com/p/437592449⬇
 pip install "jupyterlab-kite>=2.0.2"
-# https://zhuanlan.zhihu.com/p/437592449
