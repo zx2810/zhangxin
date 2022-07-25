@@ -15,6 +15,7 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted 
 # 预发布软件源，不建议启用
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
 deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse' > /etc/apt/sources.list /etc/apt/sources.list
+source /etc/apt/sources.list
 sudo apt update && sudo apt upgrade
 
 #Configure conda and pip.
