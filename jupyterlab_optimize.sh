@@ -1,6 +1,7 @@
 #%matplotlib widget
 pip install jupyterlab-language-pack-zh-CN
 pip install -U jedi-language-server
+conda install -c conda-forge texlab chktex
 jupyter serverextension enable --py jupyterlab --sys-prefix
 # pip install --upyterlab-git
 # pip install --upgrade jupyterlab jupyterlab-git
