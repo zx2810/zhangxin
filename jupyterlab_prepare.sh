@@ -12,7 +12,7 @@ c.NotebookApp.allow_root = True' >> .jupyter/jupyter_notebook_config.py
 echo "export BROWSER='/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'" >> .bashrc
 source .bashrc
 jupyter lab
-# jupyter-lab --allow-root 
+#jupyter-lab --allow-root --no-browser
 #Instead, copy the link directly from the command line.
 
 #End
